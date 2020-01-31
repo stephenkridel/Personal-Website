@@ -1,0 +1,10 @@
+body {
+    /*background: url("background.jpg");
+    background-size: cover;*/
+    background-color: rgba(0,0,0,0.05);
+}
+
+.ui.container.stackable.menu {
+    margin-top: 1em;
+    background-color: transparent;
+}
