@@ -1,10 +1,68 @@
-body {
-    /*background: url("background.jpg");
-    background-size: cover;*/
-    background-color: rgba(0,0,0,0.05);
+
+#sidebarIcon {
+    text-decoration: none;
+    color: black;
 }
 
-.ui.container.stackable.menu {
-    margin-top: 1em;
+#masthead {
     background-color: transparent;
+    height: 60vh;
+    width: 90vw;
+    position: absolute;
+    left: 5vw;
+    bottom: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.ui.top.vertical.menu.sidebar {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.ui.menu {
+    margin-bottom: none;
+}
+
+h1.ui.header {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 5em;
+}
+
+/* Sub header */
+h2 {
+    margin: 0 1em;
+}
+
+#sub_header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.animate-fadeIn {
+	animation-duration: 5s;
+}
+.sub_header_1 {
+	animation-delay: 1s;
+	animation-duration: 1s;
+	color: #e6c200;
+}
+.sub_header_2, .sub_header_4 {
+	animation-delay: 4s;
+	animation-duration: 2s;
+	color: black;
+}
+.sub_header_3 {
+	animation-delay: 2s;
+	animation-duration: 1s;
+	color: #e6c200;
+}
+.sub_header_5 {
+	animation-delay: 3s;
+	animation-duration: 1s;
+	color: #e6c200;
 }
