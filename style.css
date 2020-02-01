@@ -22,8 +22,20 @@
     font-weight: 400;
 }
 
+.linkedin.icon, .github.icon, .file.alternate.outline.icon {
+    font-size: 2em;
+}
+
+#sidebarIcon {
+    font-size: 1.5em;
+}
+
 .ui.menu {
     margin-bottom: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin-top: 1em;
 }
 
 h1.ui.header {
