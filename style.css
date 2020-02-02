@@ -7,7 +7,7 @@
 /* ^ sidebar ^ */
 
 /* v top menu v */
-#masthead {
+#initialContent {
     background-color: transparent;
     height: 60vh;
     width: 90vw;
@@ -123,4 +123,7 @@ h2 {
 .darkifyHeader {
     color: white;
 }
-/* ^ toggler ^*/
+/* ^ toggler ^ */
+
+/* v about me v */
+
