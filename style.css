@@ -55,7 +55,6 @@ h2 {
 
 #sub_header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
@@ -90,6 +89,20 @@ h2 {
 	animation-delay: 3s;
 	animation-duration: 1s;
 	color: #e6c200;
+}
+
+@media(max-width: 850px) {
+
+    #sub_header_2, #sub_header_4 {
+        display: none;
+    }
+
+    #sub_header {
+        flex-wrap: wrap;
+        align-content: center;
+        width: 250px;
+    }
+
 }
 /* ^ initial content */
 
