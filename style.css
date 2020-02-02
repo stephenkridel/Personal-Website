@@ -1,9 +1,12 @@
 
-#sidebarIcon {
-    text-decoration: none;
-    color: black;
+/* v sidebar v */
+.ui.top.vertical.menu.sidebar {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
+/* ^ sidebar ^ */
 
+/* v top menu v */
 #masthead {
     background-color: transparent;
     height: 60vh;
@@ -15,11 +18,6 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-}
-
-.ui.top.vertical.menu.sidebar {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
 }
 
 .linkedin.icon, .github.icon, .file.alternate.outline.icon {
@@ -34,19 +32,25 @@
     margin-bottom: none;
     background-color: transparent;
     border: none;
+    border-radius: 0;
     box-shadow: none;
     margin-top: 1em;
 }
 
-h1.ui.header {
+.ui.menu .item > i.icon {   /* style to fix offset menu icons */
+    margin: 0;
+}
+/* ^ top menu ^ */
+
+/* v initial content v */
+h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 5em;
+    font-size: 4em;
 }
 
-/* Sub header */
 h2 {
-    margin: 0 1em;
+    margin: 0 1.5em;
 }
 
 #sub_header {
@@ -55,26 +59,55 @@ h2 {
     justify-content: center;
     width: 100%;
 }
+
 .animate-fadeIn {
-	animation-duration: 5s;
+    animation-duration: 5s;
 }
-.sub_header_1 {
+
+.sub_header_item {
+    cursor: pointer;
+    color: black;
+}
+
+#sub_header_1 {
 	animation-delay: 1s;
 	animation-duration: 1s;
-	color: #e6c200;
+    color: #e6c200;
 }
-.sub_header_2, .sub_header_4 {
+
+#sub_header_2, #sub_header_4 {
 	animation-delay: 4s;
 	animation-duration: 2s;
-	color: black;
 }
-.sub_header_3 {
+
+#sub_header_3 {
 	animation-delay: 2s;
 	animation-duration: 1s;
 	color: #e6c200;
 }
-.sub_header_5 {
+
+#sub_header_5 {
 	animation-delay: 3s;
 	animation-duration: 1s;
 	color: #e6c200;
 }
+/* ^ initial content */
+
+/* v toggler */
+#darkThemeDiv {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+}
+
+.darkifyPusher {
+    color: white;
+    background: black !important;
+}
+
+.darkifyHeader {
+    color: white;
+}
+/* ^ toggler ^*/

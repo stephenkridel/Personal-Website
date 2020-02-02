@@ -14,44 +14,53 @@
 			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/sidebar.min.js"></script>
+    <script>var toggleCounter = 0;</script>
     <title>Stephen Kridel</title>
 </head>
-<body>
+<body id="body">
 
   <div class="ui sidebar">
-    <div class="ui left vertical menu sidebar">
-      <a class="item">About Me</a>
+    <div id="sidebar" class="ui left vertical menu sidebar">
+      <a href="#" class="item">About Me</a>
       <a class="item">Co-op Experiences</a>
       <a class="item">Resume/CV</a>
       <a class="item">Projects and Leadership</a>
     </div>
   </div>
 
-  <div class="pusher">
+  <div id="pusher" class="pusher">
 
-    <div class="ui borderless menu">
+    <div id="menu" class="ui borderless menu">
       <a class="item" id="sidebarIcon"><i class="bars icon"></i></a>
       <div class="ui right borderless menu">
-        <a href="https://www.linkedin.com/in/stephenkridel/"class="item"><i class="linkedin icon"></i></a>
-        <a href="https://github.com/stephenkridel"class="item"><i class="github icon"></i></a>
-        <a href="Kridel_Resume.pdf"class="item"><i class="file alternate outline icon"></i></a>
+        <a href="https://www.linkedin.com/in/stephenkridel/" class="item"><i class="linkedin icon"></i></a>
+        <a href="https://github.com/stephenkridel" class="item"><i class="github icon"></i></a>
+        <a href="Kridel_Resume.pdf" class="item"><i class="file alternate outline icon"></i></a>
       </div>
     </div>
 
     <div id="masthead">
-      <h1 class="ui centered header">STEPHEN KRIDEL</h1>
-      <div id="sub_header">
-        <h2 class="animated fadeIn sub_header_1">Engineer</h2>
-        <h2 class="animated fadeIn sub_header_2"> | </h2>
-        <h2 class="animated fadeIn sub_header_3">Developer</h2>
-        <h2 class="animated fadeIn sub_header_4"> |</h2>
-        <h2 class="animated fadeIn sub_header_5">Future Thinker</h2>
+      <div class="ui centered header">
+        <h1 id="nameHeader">STEPHEN KRIDEL</h1>
       </div>
+      <div id="sub_header">
+        <a><h2 data-tooltip="Take a look at my co-op experiences" data-position="bottom right" id="sub_header_1" class="animated fadeIn sub_header_item">Engineer</h2></a>
+        <h2 id="sub_header_2" class="animated fadeIn sub_header_item"> | </h2>
+        <a><h2 data-tooltip="Go see my github and the projects I've built (including this website)" data-position="bottom center" id="sub_header_3" class="animated fadeIn sub_header_item">Developer</h2></a>
+        <h2 id="sub_header_4" class="animated fadeIn sub_header_item"> |</h2>
+        <a><h2 data-tooltip="Look at my projects and leadership roles" data-position="bottom left" id="sub_header_5" class="animated fadeIn sub_header_item">Future Thinker</h2></a>
+      </div>
+    </div>
+
+    <div id="darkThemeDiv" class="ui toggle checkbox">
+      <input id="darkThemeToggler" type="checkbox" name="darkThemeCheckBox">
+      <label>Dark Theme</label>
     </div>
   </div>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/sidebar.min.js"></script>
+  <script>src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/popup.min.js"</script>
+  <script src="DarkTheme.js"></script>
   <script src="sidebar.js"></script>
 </body>
 </html>
