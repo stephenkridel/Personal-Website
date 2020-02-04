@@ -35,5 +35,9 @@ for(var i = 0; i < linkArray.length; i++){
         console.log(typeof clickedContent)
         // making the div corresponding to the clicked link equal to "flex"
         document.getElementById(clickedContent).style.display = "flex";
+
+        $('.ui.left.vertical.menu.sidebar')
+            .sidebar('hide')
+        ;
     });
 };
