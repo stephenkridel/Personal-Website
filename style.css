@@ -103,6 +103,10 @@ h2 {
         width: 250px;
     }
 
+    h1 {
+        font-size: 3.5em;
+    }
+
 }
 /* ^ initial content */
 
@@ -127,3 +131,18 @@ h2 {
 
 /* v about me v */
 
+/* ^ about me ^ */
+
+/* v coop v */
+#coopContent {
+    display: none;
+}
+
+#divider {
+    width: 0.05em;
+    height: 85vh;
+    position: absolute;
+    left: 49.25vw;
+    background-color: black;
+}
+/* ^ coop ^ */

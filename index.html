@@ -9,12 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script
-			src="https://code.jquery.com/jquery-3.4.1.min.js"
-			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous">
-    </script>
-    <script>var toggleCounter = 0;</script>
     <title>Stephen Kridel</title>
 </head>
 <body id="body">
@@ -23,7 +17,7 @@
     <div id="sidebar" class="ui left vertical menu sidebar">
       <a id="initialLink" class="item">Home</a>
       <a id="aboutMeLink" class="item">About Me</a>
-      <a id="coopLink" class="item" id="coOp">Co-op Experiences</a>
+      <a id="coopLink" class="item">Co-op Experiences</a>
       <a id="resumeLink" class="item">Resume/CV</a>
       <a id="projectsLink" class="item">Projects and Leadership</a>
     </div>
@@ -47,7 +41,7 @@
           <h1 id="nameHeader">STEPHEN KRIDEL</h1>
         </div>
         <div id="sub_header">
-          <a><h2 data-tooltip="Take a look at my co-op experiences" data-position="bottom right" id="sub_header_1" class="animated fadeIn sub_header_item">Engineer</h2></a>
+          <a><h2 data-tooltip="Check out my co-op experiences" data-position="bottom right" id="sub_header_1" class="animated fadeIn sub_header_item">Engineer</h2></a>
           <h2 id="sub_header_2" class="animated fadeIn sub_header_item"> | </h2>
           <a><h2 data-tooltip="Go see my github and the projects I've built (including this website)" data-position="bottom center" id="sub_header_3" class="animated fadeIn sub_header_item">Developer</h2></a>
           <h2 id="sub_header_4" class="animated fadeIn sub_header_item"> |</h2>
@@ -56,7 +50,12 @@
       </div>
 
       <div id="aboutMeContent"></div>
-      <div id="coopContent"></div>
+      <div id="coopContent">
+        
+        <div id="middleContent">
+          <div id="divider"></div>
+        </div>
+      </div>
       <div id="resumeContent"></div>
       <div id="projectsContent"></div>
 
@@ -67,9 +66,10 @@
       <label>Dark Theme</label>
     </div>
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/sidebar.min.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/popup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/sidebar.min.js"></script>
   <script src="ContentSwitch.js"></script>
   <script src="DarkTheme.js"></script>
   <script src="sidebar.js"></script>
