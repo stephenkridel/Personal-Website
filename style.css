@@ -138,11 +138,4 @@ h2 {
     display: none;
 }
 
-#divider {
-    width: 0.05em;
-    height: 85vh;
-    position: absolute;
-    left: 49.25vw;
-    background-color: black;
-}
 /* ^ coop ^ */
