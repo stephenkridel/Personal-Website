@@ -135,7 +135,33 @@ h2 {
 
 /* v coop v */
 #coopContent {
-    display: none;
+    display: none; /*will change to display: flex when clicked on*/
+    height: 80vh;
 }
 
+#coopRowContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    margin: 0 2em;
+    height: 85vh;
+}
+
+#achievements {
+    padding: 0 1em;
+}
+
+.ui.cards .card .content .header + .description {
+    margin: 0.5em 0;
+}
+
+.ui.stackable.cards {
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.ui.stackable.cards .card:first-child {
+    margin-top: 0.75em !important;
+}
 /* ^ coop ^ */
