@@ -6,11 +6,3 @@ sidebarIcon.addEventListener('click', function (){
     $('.ui.left.vertical.menu.sidebar')
     .sidebar('toggle');
 });
-
-// changing the three bar icon's color when the mouse is hovered over it
-sidebarIcon.addEventListener('mouseenter', function(){
-    sidebarIcon.style.color = "grey";
-});
-sidebarIcon.addEventListener('mouseleave', function(){
-    sidebarIcon.style.color = "black";
-});
