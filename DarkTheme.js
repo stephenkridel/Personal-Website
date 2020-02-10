@@ -1,11 +1,11 @@
-var toggleSlider        = document.getElementById("darkTheme"),
+var toggleSlider        = document.getElementById("darkThemeToggler"),
     sidebar             = document.getElementById("sidebar"),
     menu                = document.getElementById("menu"),
     pusher              = document.getElementById("pusher"),
     nameHeader          = document.getElementById("nameHeader"),
     subHeader2          = document.getElementById("sub_header_2"),
     subHeader4          = document.getElementById("sub_header_4")
-    body                = document.getElementById("body");
+    body                = document.querySelector("body");
 ;  
 
 toggleSlider.addEventListener("click", function(){
