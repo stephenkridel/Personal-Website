@@ -130,7 +130,19 @@ h2 {
 /* ^ toggler ^ */
 
 /* v about me v */
+#aboutMeContent {
+    display: none;
+    overflow-y: scroll;
+    height: 80vh;
+}
 
+.darkifyPortraitHeader {
+    color: white !important;
+}
+
+#aboutMeContent .ui.centered.card {
+    margin-top: 1em;
+}
 /* ^ about me ^ */
 
 /* v coop v */

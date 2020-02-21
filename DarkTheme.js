@@ -4,8 +4,9 @@ var toggleSlider        = document.getElementById("darkThemeToggler"),
     pusher              = document.getElementById("pusher"),
     nameHeader          = document.getElementById("nameHeader"),
     subHeader2          = document.getElementById("sub_header_2"),
-    subHeader4          = document.getElementById("sub_header_4")
-    body                = document.querySelector("body");
+    subHeader4          = document.getElementById("sub_header_4"),
+    body                = document.querySelector("body"),
+    aboutMeHeader       = document.getElementById("aboutMeHeader")
 ;  
 
 toggleSlider.addEventListener("click", function(){
@@ -16,4 +17,5 @@ toggleSlider.addEventListener("click", function(){
     subHeader2.classList.toggle("darkifyHeader");
     subHeader4.classList.toggle("darkifyHeader");
     body.classList.toggle("darkifyPusher");
+    aboutMeHeader.classList.toggle("darkifyPortraitHeader");
 });
