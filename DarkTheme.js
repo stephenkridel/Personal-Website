@@ -9,7 +9,7 @@ var toggleSlider        = document.getElementById("darkThemeToggler"),
     aboutMeHeader       = document.getElementById("aboutMeHeader")
 ;  
 
-toggleSlider.addEventListener("click", function(){
+function toggleDarkThemes(){
     sidebar.classList.toggle("inverted");
     menu.classList.toggle("inverted");    
     pusher.classList.toggle("darkifyPusher");
@@ -18,4 +18,10 @@ toggleSlider.addEventListener("click", function(){
     subHeader4.classList.toggle("darkifyHeader");
     body.classList.toggle("darkifyPusher");
     aboutMeHeader.classList.toggle("darkifyPortraitHeader");
+};
+
+toggleSlider.addEventListener("click", toggleDarkThemes);
+
+document.addEventListener("DOMContentLoaded", function(){
+    toggleDarkThemes();
 });
