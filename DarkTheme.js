@@ -9,6 +9,21 @@ var toggleSlider        = document.getElementById("darkThemeToggler"),
     aboutMeHeader       = document.getElementById("aboutMeHeader")
 ;  
 
+// checks if the toggler is checked when the DOM loads and toggles dark theme if it is
+document.addEventListener("DOMContentLoaded", function(){
+    checked = $('.ui.checkbox.toggle input').is(':checked');
+    console.log(checked);
+    if (checked === true) {
+        toggleDarkThemes()
+    }
+    else {
+    }
+});
+
+// toggles dark theme when toggler is clicked
+toggleSlider.addEventListener("click", toggleDarkThemes);
+
+// function that assigns appropriate classes
 function toggleDarkThemes(){
     sidebar.classList.toggle("inverted");
     menu.classList.toggle("inverted");    
@@ -19,9 +34,3 @@ function toggleDarkThemes(){
     body.classList.toggle("darkifyPusher");
     aboutMeHeader.classList.toggle("darkifyPortraitHeader");
 };
-
-toggleSlider.addEventListener("click", toggleDarkThemes);
-
-document.addEventListener("DOMContentLoaded", function(){
-    toggleDarkThemes();
-});
