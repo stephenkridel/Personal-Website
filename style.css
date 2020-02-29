@@ -143,6 +143,15 @@ h2 {
 #aboutMeContent .ui.centered.card {
     margin-top: 1em;
 }
+
+@media(max-width: 768px) {
+
+    #aboutMeContent .ui.ui.centered.card{
+        box-shadow: none;
+        border-radius: 10px; /* this fixes weird white spots that still show from the border, not the best fix */
+    }
+
+}
 /* ^ about me ^ */
 
 /* v coop v */
@@ -155,9 +164,9 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: space-around;
-    margin: 0 2em;
-    height: 85vh;
+    align-items: center;
+    margin: 0em 2em;
+    height: 100%;
 }
 
 #achievements {
@@ -173,7 +182,16 @@ h2 {
     overflow-y: scroll;
 }
 
-.ui.stackable.cards .card:first-child {
-    margin-top: 0.75em !important;
+.dimmer.container {
+    display: none;
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
 }
+
+#cardFall2019, #cardSpr2019, #cardSum2018, #cardFall2017 {
+    margin-top: 0.5em!important;
+}
+
 /* ^ coop ^ */
