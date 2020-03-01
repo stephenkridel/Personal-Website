@@ -182,16 +182,112 @@ h2 {
     overflow-y: scroll;
 }
 
-.dimmer.container {
+#coopContent .dimmer.container {
     display: none;
     height: 80vh;
     width: 100%;
     position: absolute;
     z-index: 100;
+    background-color: rgba(0,0,0,0.95);
+    align-content: center;
+    justify-content: center;
+}
+
+#coopContent .ui.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 #cardFall2019, #cardSpr2019, #cardSum2018, #cardFall2017 {
     margin-top: 0.5em!important;
+}
+
+#coopContent .one.column.row .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#coopContent .one.column.row .column .ui.inverted.icon.header {
+    margin: 0 1em 0 1em;
+}
+
+#coopContent .two.column.row p {
+    color: white;
+    width: 100%;
+    font-size: 1.15em;
+}
+
+#coopContent .two.column.row {
+    padding: 0 2em 0 2em!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coopContent .two.column.row #imgColumn {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#imgContainer img {
+    height: 35vh;
+}
+
+#imgContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#coopContent .three.column.row .column {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+@media(max-width: 636px) {
+
+    #coopContent .one.column.row .column {
+        flex-wrap: wrap;
+    }
+
+    #coopContent .one.column.row .column  #divider {
+        display: none;
+    }
+
+    #coopContent .one.column.row .column .ui.inverted.icon.header {
+        width: 250px;
+    }
+}
+
+@media(max-width: 775px) {
+    #coopContent .ui.container {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #coopContent .one.column.row .column .ui.inverted.icon.header {
+        margin-top: 1em;
+    }
+}
+
+#coopContent .close.icon {
+    top: 0.5em;
+    left: 0.5em;
+    position: absolute;
+    margin: 0 0.5em 0.5em 0;
+    color: white;
+    transition: 0.25s;
+    z-index: 1;
+}
+
+#coopContent .close.icon:hover {
+    color: grey;
+    transition: 0.25s;
+    cursor: pointer;
 }
 
 /* ^ coop ^ */
