@@ -28,7 +28,12 @@ function getDimmerByCard(array, card){
 function hideDimmer(){
     for(i = 0; i < objArray.length; i++){
         closeButton[i].addEventListener('click', function(){
-            clickedDimmer.container.style.display = 'none';
+            clickedDimmer.container.classList.add('hide');
+            clickedDimmer.container.classList.remove('show');
+            setTimeout( function(){
+                clickedDimmer.container.classList.remove('nopacity');
+                clickedDimmer.container.style.display = 'none';
+            }, 500);
         });
     };
 };
@@ -41,16 +46,11 @@ function showDimmer(){
 
             clickedDimmer = getDimmerByCard(objArray, this);
 
-            // this block increases the opacity of the container by 0.025 each step until its 1. (Background-color is rgba(0,0,0,0.9))
-            var op = 0.1;  // initial opacity
-            var timer = setInterval(function () {
-                if (op >= 1){
-                    clearInterval(timer);
-                }
-                clickedDimmer.container.style.display = 'flex';
-                clickedDimmer.container.style.opacity = op
-                op += 0.025;
-            }, 2.5);
+            clickedDimmer.container.classList.remove('hide');
+            clickedDimmer.container.classList.add('nopacity');
+            setTimeout( function(){
+                clickedDimmer.container.classList.add('show');
+            }, 50);
 
         });
     };
