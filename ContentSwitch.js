@@ -25,14 +25,26 @@ for(var i = 0; i < linkArray.length; i++){
         // setting the key of the clicked link (i.e. the first word of the ID) + "Content" to a variable
         var clickedContent = getKeyByValue(linksObject, clickedLink) + "Content";
 
+        // bouces the first card if in mobile to tell user they can click on the cards
+        if(clickedContent == 'coopContent' && document.body.clientWidth <= 700){
+            setTimeout(function(){
+                $('#cardFall2019')
+                    .transition({
+                        animation: 'bounce',
+                        duration: '1s'
+                    });
+                ;
+            }, 500);
+        };
+
         // making all masthead divs display = "none"
         for(var i = 0; i < linkArray.length; i++){
             document.getElementById(keyArray[i] + "Content").style.display = "none";
-            console.log("Deleted Style = " + keyArray[i] + "Content");
+            // console.log("Deleted Style = " + keyArray[i] + "Content");
         };
 
-        console.log(clickedContent)
-        console.log(typeof clickedContent)
+        // console.log(clickedContent)
+        // console.log(typeof clickedContent)
         // making the div corresponding to the clicked link equal to "flex"
         document.getElementById(clickedContent).style.display = "flex";
 
