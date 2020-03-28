@@ -8,6 +8,12 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
+
+@media(min-width: 576px) { /* only for non-mobile */
+    .ui.menu .item {
+        position: static!important; /* removes the lines in between sidebar items for some reason*/
+    }
+}
 /* ^ sidebar ^ */
 
 /* v top menu v */
