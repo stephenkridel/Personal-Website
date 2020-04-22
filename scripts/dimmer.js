@@ -3,9 +3,12 @@ var Fall2017Obj     = {container: document.getElementById("containerFall2017"), 
     Sum2018Obj      = {container: document.getElementById("containerSum2018"), card: document.getElementById("cardSum2018")},
     Spr2019Obj      = {container: document.getElementById("containerSpr2019"), card: document.getElementById("cardSpr2019")},
     Fall2019Obj     = {container: document.getElementById("containerFall2019"), card: document.getElementById("cardFall2019")},
-    
+    ewbObj          = {container: document.getElementById("containerEWB"), card: document.getElementById("ewb")},
+    uchaObj         = {container: document.getElementById("containerUCHA"), card: document.getElementById("ucha")},
+    bassObj         = {container: document.getElementById("containerBass"), card: document.getElementById("bassPedalProject")},
+    webObj          = {container: document.getElementById("containerWeb"), card: document.getElementById("personalWebsite")},
     // an array of each object to allow looping through
-    objArray        = [Fall2017Obj, Sum2018Obj, Spr2019Obj, Fall2019Obj],
+    objArray        = [Fall2017Obj, Sum2018Obj, Spr2019Obj, Fall2019Obj, ewbObj, uchaObj, bassObj, webObj],
 
     // the class each dimmer has. Starts out with Display: none because it overlays the rest of the content.
     container       = document.getElementsByClassName('dimmer container'),

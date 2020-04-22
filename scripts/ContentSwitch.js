@@ -24,11 +24,20 @@ for(var i = 0; i < linkArray.length; i++){
         var clickedLink = this;
         // setting the key of the clicked link (i.e. the first word of the ID) + "Content" to a variable
         var clickedContent = getKeyByValue(linksObject, clickedLink) + "Content";
-
+        console.log(clickedContent);
         // bouces the first card if in mobile to tell user they can click on the cards
-        if(clickedContent == 'coopContent' && document.body.clientWidth <= 700){
+        if(clickedContent == 'coopContent'){
             setTimeout(function(){
                 $('#cardFall2019')
+                    .transition({
+                        animation: 'bounce',
+                        duration: '1s'
+                    });
+                ;
+            }, 500);
+        } else if(clickedContent =='projectsContent'){
+            setTimeout(function(){
+                $('#ewb')
                     .transition({
                         animation: 'bounce',
                         duration: '1s'

@@ -186,7 +186,12 @@ h2 {
     height: 100%;
 }
 
-#coopRowContainer {
+#projectsContent {
+    display: none; /* will change to display: flex when clicked on */
+    height: 100%;
+}
+
+.cardRowContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -206,7 +211,7 @@ h2 {
     margin: 0.5em 0;
 }
 
-#coopContent .dimmer.container {
+.cardContentBlock .dimmer.container {
     display: none;
     height: 92%; 
     width: 100%;
@@ -232,41 +237,41 @@ h2 {
     transition: opacity 500ms;
 }
 
-#coopContent .ui.container {
+.cardContentBlock .ui.container, #projectsContent .ui.container {
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
-#cardFall2019, #cardSpr2019, #cardSum2018, #cardFall2017 {
+.ui.link.card {
     margin-top: 0.5em!important;
 }
 
-#coopContent .one.column.row .column {
+.cardContentBlock .one.column.row .column {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#coopContent .one.column.row .column .ui.inverted.icon.header {
+.cardContentBlock .one.column.row .column .ui.inverted.icon.header {
     margin: 0 1em 0 1em;
 }
 
-#coopContent .two.column.row p {
+.cardContentBlock .two.column.row p {
     color: white;
     width: 100%;
     font-size: 1.15em;
     padding: 0 1em 0 1em; /* added to keep paragraphs from clipping when in mobile */
 }
 
-#coopContent .two.column.row {
+.cardContentBlock .two.column.row {
     padding: 0 2em 0 2em!important;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#coopContent .two.column.row #imgColumn {
+.cardContentBlock .two.column.row #imgColumn, #projectsContent .two.column.row #imgColumn {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -282,7 +287,7 @@ h2 {
     justify-content: center;
 }
 
-#coopContent .three.column.row .column {
+.cardContentBlock .three.column.row .column {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -290,31 +295,31 @@ h2 {
 
 @media(max-width: 636px) {
 
-    #coopContent .one.column.row .column {
+    .cardContentBlock .one.column.row .column {
         flex-wrap: wrap;
     }
 
-    #coopContent .one.column.row .column  #divider {
+    .cardContentBlock .one.column.row .column  #divider {
         display: none;
     }
 
-    #coopContent .one.column.row .column .ui.inverted.icon.header {
+    .cardContentBlock .one.column.row .column .ui.inverted.icon.header {
         width: 250px;
     }
 }
 
 @media(max-width: 775px) {
-    #coopContent .ui.container {
+    .cardContentBlock .ui.container {
         overflow-y: scroll;
         overflow-x: hidden;
     }
 
-    #coopContent .one.column.row .column .ui.inverted.icon.header {
+    .cardContentBlock .one.column.row .column .ui.inverted.icon.header {
         margin-top: 1em;
     }
 }
 
-#coopContent .close.icon {
+.cardContentBlock .close.icon {
     top: 0.5em;
     left: 0.5em;
     position: absolute;
@@ -324,7 +329,7 @@ h2 {
     z-index: 1;
 }
 
-#coopContent .close.icon:hover {
+.cardContentBlock .close.icon:hover {
     color: grey;
     transition: 0.25s;
     cursor: pointer;
