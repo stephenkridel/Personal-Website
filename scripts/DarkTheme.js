@@ -8,7 +8,8 @@ var toggleSlider        = document.getElementById("darkThemeToggler"),
     body                = document.querySelector("body"),
     aboutMeHeader       = document.getElementById("aboutMeHeader"),
     bottomBar           = document.getElementById("bottomBar"),
-    darkLabel           = document.getElementById("darkLabel")
+    darkLabel           = document.getElementById("darkLabel"),
+    resumeHeader        = document.getElementById("resumeHeader")
 ;  
 
 // checks if the toggler is checked when the DOM loads and toggles dark theme if it is
@@ -36,6 +37,7 @@ function toggleDarkThemes(){
     body.classList.toggle("darkifyPusher");
     aboutMeHeader.classList.toggle("darkifyPortraitHeader");
     darkLabel.classList.toggle("darkText");
+    resumeHeader.classList.toggle("darkifyPortraitHeader");
 
     checked = $('.ui.checkbox.toggle input').is(':checked');
     // console.log(checked);
