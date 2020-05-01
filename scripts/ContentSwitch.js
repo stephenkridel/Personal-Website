@@ -2,7 +2,6 @@
 var linksObject = { 
     initial         : document.getElementById("initialLink"),
     aboutMe         : document.getElementById("aboutMeLink"),
-    resume          : document.getElementById("resumeLink"),
     coop            : document.getElementById("coopLink"),
     projects        : document.getElementById("projectsLink"),
     }

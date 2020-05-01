@@ -8,8 +8,7 @@ var toggleSlider        = document.getElementById("darkThemeToggler"),
     body                = document.querySelector("body"),
     aboutMeHeader       = document.getElementById("aboutMeHeader"),
     bottomBar           = document.getElementById("bottomBar"),
-    darkLabel           = document.getElementById("darkLabel"),
-    resumeHeader        = document.getElementById("resumeHeader")
+    darkLabel           = document.getElementById("darkLabel")
 ;  
 
 // checks if the toggler is checked when the DOM loads and toggles dark theme if it is
