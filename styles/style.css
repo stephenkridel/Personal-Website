@@ -61,7 +61,7 @@
 }
 
 #sidebarIcon:hover {
-    background-color: white;
+    background-color: transparent;
     cursor: default;
 }
 
