@@ -140,29 +140,6 @@ h2 {
 /* ^ initial content */
 
 /* v toggler */
-#darkThemeDiv {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1em;
-    position: absolute;
-    bottom: 3.5vh;
-    left: 1em;
-}
-
-#bottomBar {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 8vh;
-    align-items: center;
-    z-index: 51;
-    background-color: transparent;
-    color: black;
-}
-
-.darkText {
-    color: white!important;
-}
-
 .darkifyPusher {
     color: white;
     background: black !important;
@@ -202,11 +179,13 @@ h2 {
 #coopContent {
     display: none; /* will change to display: flex when clicked on */
     height: 100%;
+    padding-top: 0.25em;
 }
 
 #projectsContent {
     display: none; /* will change to display: flex when clicked on */
     height: 100%;
+    padding-top: 0.25em;
 }
 
 .cardRowContainer {
