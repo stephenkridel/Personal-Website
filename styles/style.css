@@ -169,7 +169,7 @@ h2 {
 
     #aboutMeContent .ui.ui.centered.card{
         box-shadow: none;
-        border-radius: 10px; /* this fixes weird white spots that still show from the border, not the best fix */
+        background: none;
     }
 
 }
@@ -186,6 +186,7 @@ h2 {
     display: none; /* will change to display: flex when clicked on */
     height: 100%;
     padding-top: 0.25em;
+    
 }
 
 .cardRowContainer {
